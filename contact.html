@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+   <link rel="stylesheet" href="index.css">
+   <script src="index.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <title>SOLE STORE : CONTACT US</title>
+</head>
+<body>
+
+   <!--HEADER SECTION-->
+   <section id="header">
+      <a href="index.html" class="logo"><h1>SOLE<span>STORE</span></h1></a>
+      <div>
+         <ul id="navbar" style="padding-right:10px ;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" >Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="cart.html"><i class="fa fa-shopping-bag"><span id="num-cart">3</span></i></a></li>
+         </ul>
+      </div>
+      <div>
+         <ul id="navbar1">
+            <li id="usericon"><i class="fa fa-user"></i>
+               <!--LOGIN AND SIGNUP SECTION-->
+               <section id="login_signup">
+                  <div id="image">
+                     <img src="img/logo.png" alt="Brand Logo">
+                  </div>
+                  <div id="lsbutton">
+                     <input type="button" value="LOG IN" id="hoverlogin">
+                     <input type="button" value="SIGN-UP" id="hoversignup">
+                  </div>
+               </section>
+            </li>
+         </ul>
+      </div>
+   </section>
+
+   <section id="contactpagebanner">
+      <h1>#lets connect</h1>
+      <h3>We'd love to get in touch with you!!</h3>
+   </section>
+   
+   <section id="contactdetails">
+      <div id="details">
+         <span>GET IN TOUCH</span>
+         <h2>Visit our agency location or contact us today.</h2>
+         <h3>Head Office</h3>
+         <div id="moredetails">
+            <li><i class="fa fa-map"></i><p>MPSTME, Vile Parle (W), Mumbai</p></li>
+            <li><i class="fa fa-envelope"></i><p>aadityarmall@gmail.com</p></li>
+            <li><i class="fa fa-phone"></i><p></p>9619232329</li>
+            <li><i class="fa fa-clock-o"></i><p></p>9:00 - 20:00 Monday- Friday</li>
+         </div>
+      </div>
+      <div id="map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9449786834048!2d72.83544851437728!3d19.110069555867852!2m
+         3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b888ae67fd%3A0xe0b9538d623ac5d2!2sMukesh%20Patel%20School%20Of%20Technolo
+         gy%20Management%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1667165494830!5m2!1sen!2sin"  width="600" height="450" style="border:0;" 
+         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+   </section>
+
+   <section id="contactus-form">
+      <form action="">
+         <span>LEAVE A MESSAGE</span>
+         <h2>We love your feedbacks!</h2>
+         <input type="text" placeholder="Your Name" id="" required>
+         <input type="email" placeholder="Email Id" id="" required>
+         <input type="text" placeholder="Subject" >
+         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+         <button value="submit">SUBMIT</button>
+      </form>
+      <div id="people">
+         <div>
+            <img src="img/people/1.jpeg" alt="aadityarmall">
+            <p><span>Aaditya Mall</span> Roll Number : C002<br>Phone : 9326430750 <br> Email : aadityarmall@gmail.com</p>
+         </div>
+         <div>
+            <img src="img/people/2.jpg" alt="arushisangle">
+            <p><span>Arushi Sangle</span> Roll Number : C011<br>Phone : 9619232329 <br> Email : arushigsangle@gmail.com</p>
+         </div>
+         <div>
+            <img src="img/people/3.jpg" alt="aryanmehta">
+            <p><span>Aryan Mehta</span> Roll Number : C032<br>Phone : 9137023659 <br> Email : aryabhav2004@gmail.com</p>
+         </div>
+      </div>
+   </section>
+
+   
+   <!--LOGIN MAIN WINDOW-->
+   <section id="loginmain">
+      <i class="far fa-arrow-alt-circle-left" id="loginmain-back">  Go Back</i>
+      <div id="loginform">
+         <img src="img/logo.png" alt="">
+         <fieldset>
+         <legend><strong>LOG IN</strong></legend>
+         <form action="index.html">
+            <input type="email" name="email" id="email" placeholder="Example@gmail.com" required onclick="resetBtn()">
+            <input type="password" name="pass" id="pass" placeholder="Password" required minlength="8" onclick="resetBtn()">
+            <p>Don't have an Account?  <span id="linkforsignup"> Sign Up.</span></p><br><p id="forgotpass">Forgot Your Password?</p>
+            <button type="submit" id="submit-btn" onmouseover="mouseOver()">LOG IN</button><br>
+            <span id="error"></span>
+         </form>
+         </fieldset>
+      </div>
+   </section>   
+   
+      <!--SIGN-UP MAIN WINDOW-->
+   <section id="signupmain">
+      <i class="far fa-arrow-alt-circle-left" id="signupmain-back">  Go Back</i>
+      <div id="signupform">
+         <img src="img/logo.png" alt="">
+         <fieldset>
+         <legend><strong>SIGN UP</strong></legend>
+         <form action="index.html">
+            <input type="text" name="name" id="name" placeholder="Full Name" required onclick="resetBtn1()">
+            <input type="email" name="email" id="email-s" placeholder="Example@gmail.com" required onclick="resetBtn1()">
+            <input type="password" name="pass" id="pass-s" placeholder="Password" required minlength="8" onclick="resetBtn1()">
+            <p>Already Have an Account?<span id="linkforlogin"> LOGIN.</span></p>
+            <button type="submit" id="submit-btn-s" onmouseover="mouseOver1()">SIGN UP</button><br>
+            <span id="error-s"></span>
+         </form>
+      </fieldset>
+      </div>
+   </section>
+
+   <!--FOOTER-->
+   <footer class="section-footer">
+      <div class="col">
+         <img src="img/logo.png" alt="" style="width :200px; height:auto;">
+         <h3>Contact</h3>
+         <p><strong>Address:</strong><br> Mukesh Patel School of Technology, Management and Engineering<br>Vile Parle(W), Mumbai</p>
+         <p><strong>Phone :</strong> 9326430750</p>
+         <p><strong>Hours:</strong> 8:00 - 20:00 Monday - Friday</p>
+         <div class="follow">
+            <h3>Follow Us</h3>
+            <div class="icon">
+               <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+               <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+               <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
+               <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="col">
+         <h3 style="margin-top:3vh ;">ABOUT</h3>
+         <a href="about.html">ABOUT US</a>
+         <a href="contact.html">CONTACT US</a>
+      </div>
+
+      <div class="col">
+         <h3 style="margin-top:3vh ;">MY ACCOUNT</h3>
+         <span id="linkforlogin">SIGN IN</span>
+         <a href="cart.html">VIEW CART</a>
+
+      </div>
+
+      <div class="col-install">
+         <h3 style="margin-top:3vh ;">INSTALL APP</h3>
+         <p>FROM APP STORE OR GOOGLE PLAY</p>
+         <div class="row">
+            
+            <a href="https://play.google.com/"><img src="img/pay/play.jpg" alt=""></a>
+            <a href="https://apps.apple.com/"><img src="img/pay/app.jpg" alt=""></a>
+            
+         </div>
+         <p>SECURE PAYMENT GETAWAYS</p>
+         <img src="img/pay/pay.png" alt="">
+      </div>
+      <marquee behavior="" direction="" id="cp"><strong><p>© 2022, C002 C011 C032 - FWD MINI PROJECT</p></strong></marquee>
+   </footer>
+
+   <script>
+
+      $(document).ready(function(){ 
+        $("#usericon").hover(function(){
+            $("#login_signup").fadeIn();
+         },
+         function(){
+            $("#login_signup").fadeOut();
+         });
+      });
+
+      $(document).ready(function(){ 
+        $("#usericon").click(function(){
+            $("#login_signup").fadeIn();
+         });
+      });
+
+      $(document).ready(function(){ 
+        $("#hoverlogin").click(function(){
+            $("#loginmain").fadeIn();
+            $("marquee").hide();
+         });
+      });
+
+      $(document).ready(function(){ 
+        $("#loginmain-back").click(function(){
+            $("#loginmain").fadeOut();
+            $("marquee").show();
+         });
+      });
+
+      $(document).ready(function(){ 
+        $("#hoversignup").click(function(){
+            $("#signupmain").fadeIn();
+            $("marquee").hide();
+         });
+      });
+
+      $(document).ready(function(){ 
+        $("#signupmain-back").click(function(){
+            $("#signupmain").fadeOut();
+            $("marquee").show();
+         });
+      });
+
+      $(document).ready(function(){ 
+        $("#linkforsignup").click(function(){
+            $("#loginmain").fadeOut();
+            $("#signupmain").fadeIn();
+         });
+      });
+
+      $(document).ready(function(){ 
+        $("#linkforlogin").click(function(){
+            $("#signupmain").fadeOut();
+            $("#loginmain").fadeIn();
+         });
+      });
+                   
+
+   </script>
+   
+</body>
+</html>
